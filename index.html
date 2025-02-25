@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Simple con CSS</title>
+    <title>Página Simple con CSS y JavaScript</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,6 +15,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-direction: column;
         }
 
         .container {
@@ -45,14 +47,25 @@
         .button:hover {
             background-color: #0056b3;
         }
+
+        footer {
+            margin-top: 20px;
+            color: #999999;
+            font-size: 14px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>¡Hola, Mundo!</h1>
         <p>Este es un ejemplo simple de una página HTML con CSS.</p>
-        <button class="button">Haz clic aquí</button>
+        <button class="button" id="clickButton">Haz clic aquí</button>
     </div>
+    <footer>
+        &copy; 2023 Mi Página Simple
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
-//
